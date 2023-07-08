@@ -80,7 +80,6 @@ main {
 .item-desc h2{
     font-size: 25px;
     letter-spacing: 2px;
-    
 }
 
 .item-desc .item-ingredients{
@@ -103,4 +102,72 @@ main {
     font-size: 20px;
     cursor: pointer;
     user-select: none;
+}
+
+.cart{
+    font-family: pizza2, sans-serif;
+    text-align: center;
+    width: 100%;
+    background-color: white;
+}
+
+.cart h2{
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: 1em;
+}
+
+.cart .cart-items{
+    border-bottom: 2px solid #000;
+    margin: 10px auto;
+}
+
+.cart .cart-items .cart-item{
+    display: flex;
+    align-items: center;
+}
+
+.cart-item h3{
+    font-size: 40px;
+    margin-left: 10px;
+}
+
+.cart-item .remove-button{
+    border: none;
+    background-color: transparent;
+    color: #ccc;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: inherit;
+    cursor: pointer;
+    margin-left: 0.2em;
+}
+
+
+
+.cart .cart-item-price, .cart .total-price{
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: auto;
+    margin-right: 10px;
+}
+
+.cart .cart-total{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+.cart .cart-total h3{
+    font-size: 50px;
+}
+
+.cart .order-button{
+    border: none;
+    background-color: forestgreen;
+    color: white;
+    padding: 10px 20px;
+    width: 100%;
+    font-size: 25px;
+    cursor: pointer;
 }

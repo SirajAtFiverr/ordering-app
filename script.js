@@ -25,3 +25,16 @@ function renderItem(item){
 }
 
 renderItems();
+
+
+document.addEventListener("click", function(event){
+    if(event.target.classList.contains("add-to-cart-button")){
+        const itemID = event.target.id;
+        const item = menuArray.find(function
+            (item){
+                return item.id === Number(itemID);
+            }
+        );
+        console.log(item);
+    }
+})
