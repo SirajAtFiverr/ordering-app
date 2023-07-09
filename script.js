@@ -104,16 +104,23 @@ document.addEventListener("click", function(event){
         paymentBoxEl.classList.remove("hidden");
     }
 
-    if(event.target.classList.contains("submit-button")){
+});
+
+document.addEventListener("keydown", function(event){
+    if (event.keyCode === 38 || event.keyCode === 40) {
         event.preventDefault();
-        const formData = new FormData(event.target.form);
-        messageEl.textContent = `Thanks ${formData.get("name")}! your order has been placed!`;
-        messageEl.classList.remove("hidden");
-        paymentBoxEl.classList.add("hidden");
-        
-        setTimeout(function(){
-            messageEl.classList.add("hidden");
-        }, 2000);
-        
-    }
-})
+      }
+});
+
+document.addEventListener("submit", function(event){
+    event.preventDefault();
+    const formData = new FormData(event.target);
+    messageEl.textContent = `Thanks ${formData.get("name")}! your order has been placed!`;
+    messageEl.classList.remove("hidden");
+    paymentBoxEl.classList.add("hidden");
+    
+    setTimeout(function(){
+        messageEl.classList.add("hidden");
+    }, 2000);
+    
+});
