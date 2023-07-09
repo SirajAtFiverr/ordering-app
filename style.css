@@ -501,12 +501,10 @@ input[type=number]::-webkit-outer-spin-button {
             color: white;
             border-color: white;
         }
-
     
         .remove-button:hover{
             color: seagreen;
         }
-
     
         .submit-button:hover, .order-button:hover{
             background-color:  rgba(46, 139, 86, 0.9);
