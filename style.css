@@ -14,6 +14,12 @@
     src: url("assets/Quesha-gndR.ttf") format("truetype");
 }
 
+body{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
 #app{
     font-family: pizza, sans-serif;
 }
@@ -30,6 +36,7 @@ header{
     position: relative;
     width: 100%;
     font-family: pizza2, sans-serif;
+    margin-bottom: 2em;
 }
 
 header .text{
@@ -164,10 +171,80 @@ main {
 
 .cart .order-button{
     border: none;
-    background-color: forestgreen;
+    background-color: seagreen;
     color: white;
     padding: 10px 20px;
     width: 100%;
     font-size: 25px;
     cursor: pointer;
+}
+
+.payment-box{
+    position: fixed;
+    top : 25%;
+    left: 5%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 5px #0000001a;
+    background-color: #ffffff;
+    width: 90%;
+}
+
+.payment-details-form{
+    width: 100%;
+    text-align: center;
+    padding: 1em;
+}
+
+.payment-details-form h2{
+    font-family: pizza2, sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 4em;
+}
+
+input{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 20px;
+    outline: none;
+    
+}
+
+.submit-button{
+    border: none;
+    background-color: seagreen;
+    color: white;
+    padding: 15px 20px;
+    width: 100%;
+    font-size: 25px;
+    cursor: pointer;
+    margin-top: 1em;
+}
+
+.message-box{
+    width: 90%;
+    text-align: center;
+    padding: 1em;
+    background-color:  rgba(46, 139, 86, 0.2);
+    margin: 4em auto;
+    font-family: pizza2, sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    color: seagreen;
+}
+
+.hidden{
+    display: none;
 }

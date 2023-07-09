@@ -36,7 +36,7 @@
                 </div> -->
             </div>
             
-            <div class="cart">
+            <div class="cart hidden">
                 <h2>You Order</h2>
                 <section class="cart-items">
                     <div class="cart-item">
@@ -59,9 +59,43 @@
                 </section>
                 <button class="order-button">Complete Order</button>
             </div>
+
+            <div class="payment-box hidden">
+                <div class="payment-details-form">
+                    <h2>Enter Payment Details</h2>
+                    <form>
+                        <input
+                         type="text" 
+                         name="name"
+                         placeholder="Enter your name"
+                         aria-label="name"
+                         required
+                         >
+                        <input
+                        type="number"
+                        name="card-number"
+                        placeholder="Enter your card number"
+                        aria-label="card number"
+                        required
+                        >
+                        <input
+                        type="number"
+                        name="cvv"
+                        placeholder="Enter CVV"
+                        aria-label="cvv"
+                        required
+                        >
+                        <button class="submit-button">Pay</button>
+                    </form>
+                </div>
+            </div>
             
     
         </main>
+    </div>
+
+    <div class="message-box hidden">
+        Order placed successfully!
     </div>
     
     <script src="script.js" type="module"></script>
